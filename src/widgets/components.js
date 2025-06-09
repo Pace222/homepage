@@ -104,6 +104,7 @@ const components = {
   portainer: dynamic(() => import("./portainer/component")),
   prometheus: dynamic(() => import("./prometheus/component")),
   prometheusmetric: dynamic(() => import("./prometheusmetric/component")),
+  protectedpihole: dynamic(() => import("./pihole/component")),
   prowlarr: dynamic(() => import("./prowlarr/component")),
   proxmox: dynamic(() => import("./proxmox/component")),
   pterodactyl: dynamic(() => import("./pterodactyl/component")),

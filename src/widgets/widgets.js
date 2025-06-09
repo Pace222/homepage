@@ -94,6 +94,7 @@ import plex from "./plex/widget";
 import portainer from "./portainer/widget";
 import prometheus from "./prometheus/widget";
 import prometheusmetric from "./prometheusmetric/widget";
+import protectedpihole from "./protectedpihole/widget";
 import prowlarr from "./prowlarr/widget";
 import proxmox from "./proxmox/widget";
 import proxmoxbackupserver from "./proxmoxbackupserver/widget";
@@ -239,6 +240,7 @@ const widgets = {
   portainer,
   prometheus,
   prometheusmetric,
+  protectedpihole,
   prowlarr,
   proxmox,
   pterodactyl,
