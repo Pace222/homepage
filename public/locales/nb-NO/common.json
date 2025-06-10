@@ -746,5 +746,11 @@
         "physicalRelease": "Physical release",
         "inCinemas": "In cinemas",
         "digitalRelease": "Digital release"
+    },
+    "protectedpihole": {
+        "queries": "Spørringer",
+        "blocked": "Blokkert",
+        "gravity": "Gravitet",
+        "blocked_percent": "Blocked %"
     }
 }

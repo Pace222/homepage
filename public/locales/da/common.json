@@ -1054,5 +1054,11 @@
     "checkmk": {
         "serviceErrors": "Service issues",
         "hostErrors": "Host issues"
+    },
+    "protectedpihole": {
+        "queries": "Forespørgsler",
+        "blocked": "Blokerede",
+        "blocked_percent": "Blokeret %",
+        "gravity": "Tyngdekraft"
     }
 }

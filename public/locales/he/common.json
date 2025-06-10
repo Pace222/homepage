@@ -1054,5 +1054,11 @@
     "checkmk": {
         "serviceErrors": "שגיאות שירות",
         "hostErrors": "שגיאות מארח"
+    },
+    "protectedpihole": {
+        "queries": "שאילתות",
+        "blocked": "נחסם",
+        "blocked_percent": "% נחסם",
+        "gravity": "Gravity"
     }
 }

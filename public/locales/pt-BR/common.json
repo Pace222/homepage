@@ -746,5 +746,11 @@
         "physicalRelease": "Physical release",
         "inCinemas": "In cinemas",
         "digitalRelease": "Digital release"
+    },
+    "protectedpihole": {
+        "queries": "Consultas",
+        "blocked": "Bloqueados",
+        "gravity": "Gravidade",
+        "blocked_percent": "Bloqueado %"
     }
 }

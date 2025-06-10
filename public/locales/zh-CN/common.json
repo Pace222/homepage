@@ -746,5 +746,11 @@
         "physicalRelease": "Physical release",
         "inCinemas": "In cinemas",
         "digitalRelease": "Digital release"
+    },
+    "protectedpihole": {
+        "queries": "查询",
+        "blocked": "阻止",
+        "gravity": "重力",
+        "blocked_percent": "拦截 %"
     }
 }

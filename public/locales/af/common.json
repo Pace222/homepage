@@ -1054,5 +1054,11 @@
     "checkmk": {
         "serviceErrors": "Diensprobleme",
         "hostErrors": "Gasheerprobleme"
+    },
+    "protectedpihole": {
+        "queries": "Navraë",
+        "blocked": "Geblok",
+        "blocked_percent": "Geblok %",
+        "gravity": "Swaartekrag"
     }
 }

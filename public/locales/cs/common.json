@@ -1054,5 +1054,11 @@
     "checkmk": {
         "serviceErrors": "Service issues",
         "hostErrors": "Host issues"
+    },
+    "protectedpihole": {
+        "queries": "Dotazy",
+        "blocked": "Blokováno",
+        "blocked_percent": "Blokováno",
+        "gravity": "Gravity"
     }
 }
