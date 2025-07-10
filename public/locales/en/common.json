@@ -1066,5 +1066,16 @@
         "blocked": "Blocked",
         "blocked_percent": "Blocked %",
         "gravity": "Gravity"
+    },
+    "komodo": {
+        "total": "Total",
+        "running": "Running",
+        "stopped": "Stopped",
+        "down": "Down",
+        "unhealthy": "Unhealthy",
+        "unknown": "Unknown",
+        "servers": "Servers",
+        "stacks": "Stacks",
+        "containers": "Containers"
     }
 }

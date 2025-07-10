@@ -338,6 +338,10 @@ export function cleanServiceGroups(groups) {
           // jellystat
           days,
 
+          // komodo
+          showSummary,
+          showStacks,
+
           // kopia
           snapshotHost,
           snapshotPath,
@@ -362,6 +366,9 @@ export function cleanServiceGroups(groups) {
 
           // opnsense, pfsense
           wan,
+
+          // portainer
+          kubernetes,
 
           // prometheusmetric
           metrics,
@@ -444,11 +451,18 @@ export function cleanServiceGroups(groups) {
         if (type === "unifi") {
           if (site) widget.site = site;
         }
+        if (type === "portainer") {
+          if (kubernetes) widget.kubernetes = !!JSON.parse(kubernetes);
+        }
         if (type === "proxmox") {
           if (node) widget.node = node;
         }
         if (type === "proxmoxbackupserver") {
           if (datastore) widget.datastore = datastore;
+        }
+        if (type === "komodo") {
+          if (showSummary !== undefined) widget.showSummary = !!JSON.parse(showSummary);
+          if (showStacks !== undefined) widget.showStacks = !!JSON.parse(showStacks);
         }
         if (type === "kubernetes") {
           if (namespace) widget.namespace = namespace;
