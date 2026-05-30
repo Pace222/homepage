@@ -7,14 +7,14 @@ import widgets from "widgets/widgets";
 const proxyName = "backrestProxyHandler";
 const logger = createLogger(proxyName);
 
-function sumField(plans, field) {
+export function sumField(plans, field) {
   return plans.reduce((sum, plan) => {
     const num = Number(plan[field]);
     return sum + (Number.isNaN(num) ? 0 : num);
   }, 0);
 }
 
-function buildResponse(plans) {
+export function buildResponse(plans) {
   const numSuccess30Days = sumField(plans, "backupsSuccessLast30days");
   const numFailure30Days = sumField(plans, "backupsFailed30days");
   const bytesAdded30Days = sumField(plans, "bytesAddedLast30days");
@@ -24,10 +24,11 @@ function buildResponse(plans) {
 
   plans.forEach((plan) => {
     const statuses = plan?.recentBackups?.status;
+    // See https://github.com/garethgeorge/backrest/blob/4357295a17cb2e71639473c9929a060c4dd1b624/proto/v1/operations.proto#L78-L87
     if (Array.isArray(statuses) && statuses.length > 0) {
       if (statuses[0] === "STATUS_SUCCESS") {
         numSuccessLatest++;
-      } else {
+      } else if (statuses[0] === "STATUS_ERROR") {
         numFailureLatest++;
       }
     }
